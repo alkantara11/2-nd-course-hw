@@ -5,4 +5,92 @@
   }
   .header {
     background-image: url(./img/header_logo.jpg);
+    height: 1024px;
+    width: 1440px;
+    color: white;
   }
+  .header_h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 217px;
+    width: 788px;
+    padding-left: 120px;
+    padding-bottom: 32px;
+  }
+.header_h2 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 177.778% */
+    width: 481px;
+    padding-left: 120px;
+    padding-bottom: 44px;
+}
+.header_button {
+    width: 234.063px;
+    height: 48.603px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #9C0332;
+    color: #FFF;
+    margin-left: 120px;
+}
+.play {
+    width: 1440px;
+    height: 556px;
+    flex-shrink: 0;
+    background-color: #000915;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.play_1 {
+    width: 379px;
+    height: 300px;
+    background-image: url(./img/play_1.jpg);
+    border-radius: 16px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    padding: 236px 260px 32px 32px;
+}
+.play_2 {
+    width: 379px;
+    height: 300px;
+    background-image: url(./img/play_2.jpg);
+    border-radius: 16px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    padding: 236px 260px 32px 32px;
+}
+.play_3 {
+    width: 379px;
+    height: 300px;
+    background-image: url(./img/play_3.jpg);
+    border-radius: 16px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    padding: 236px 260px 32px 32px;
+}
