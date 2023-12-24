@@ -25,11 +25,14 @@ alert(num);
 let age = Number(prompt('сколько вам лет?'));
 alert(age);
 const user = {
-    name: Вась,
+    name: 'Vasya',
     age: 11,
     isAdmin: false
 }
-user['city of residence'] = Mishkin;
+user['city of residence'] = 'Mishkin';
 delete user['city of residence'];
 let info = prompt('Какую информацию хотите узнать о пользователе?');
+console.log(user[info]); 
+let name2 = (prompt('как вас зовут?'));
+alert(`Привет, ${name2}!`);
 
