@@ -21,6 +21,16 @@ const obj = {
 for (let key in obj) {
     console.log (`${key} — зарплата ${obj[key]}`);
 }
-for (n = 1000; n > 50; n / 2) {
-    console.log (n)
-} 
+let n = 1000;
+let num = 0;
+while (n >= 50) {
+    n /= 2;
+    num++
+}
+console.log (n)
+console.log (num)
+for (let i = 1; i <= 31; i += 7) {
+
+    console.log(`Сегодня пятница ${i}-е число. Необходимо подготовить отчет.  `);
+  
+  }
