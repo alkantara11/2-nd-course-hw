@@ -32,5 +32,45 @@ console.log (num)
 for (let i = 1; i <= 31; i += 7) {
 
     console.log(`Сегодня пятница ${i}-е число. Необходимо подготовить отчет.  `);
-  
-  }
+    }
+    let m = 1
+    while (m <= 17) {
+        m++
+        console.log (m)
+    }
+
+    const user = {
+        name: 'Sssad',
+        age: 14,
+        city: 'Mausland',
+        
+        getinfo () {
+            return `пользоывтель ${user.name}, возраст ${user.age}, проживает в ${user.city}`;
+        }
+    }
+        console.log(user.getinfo());
+
+        function getRectangleArea () {
+        return this.with * this.heigh;
+        }
+        function getRectanglePerimeter () {
+            return this.with * this.heigh * 2;
+        }
+        const square1 = {
+            with: 51,
+            heigh: 14,
+            
+            getArea: getRectangleArea,
+            getPerimeter: getRectanglePerimeter,
+        }
+        const square2 = {
+            with: 33,
+            heigh: 32,
+            
+            getArea: getRectangleArea,
+            getPerimeter: getRectanglePerimeter,
+        }
+        console.log(square2.getArea());
+        console.log(square2.getPerimeter());
+        console.log(square1.getArea());
+        console.log(square1.getPerimeter());
