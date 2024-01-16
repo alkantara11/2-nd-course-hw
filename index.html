@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </header>
 <body>
     <head>
@@ -23,15 +23,31 @@
         <a class="play_2" href="index.html">Игра 2</a>
         <a class="play_3" href="index.html">Игра 3</a>
     </div>
-    <footer class="footer center">
+    <div class="footer center">
         <div class="footer_left">
             <h1 class="footer_h1">Времена года!</h1>
             <h2 class="footer_h2">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</h2>
-            <button class="footer_button">Играть!</button>
+            <button onclick="seasonPlay()" class="footer_button">Поехали</button>
         </div>
         <div>
             <img class="footer_img" src="./img/fooler.svg" alt="">
         </div>
-    </footer>
+    </div>
+    <div class="remember center">
+        <div>
+            <img class="remember_img" src="./img/remember.svg" alt="">
+        </div>
+            <div class="remember_right">
+                <h1 class="remember_h1">Запомни слова!</h1>
+                <h2 class="remember_h2">При нажатии на кнопку играть, вы увидите несколько слов,<br> которые вам необходимо запомнить.</h2>
+                <button class="footer_button">Играть!</button>
+        </div>
+    </div>
+    <div class="riddle center">
+            <h1 class="riddle_h1">Игра в загадки</h1>
+            <h2 class="riddle_h2">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</h2>
+            <button class="riddle_button">Играть!</button>
+    </div>
+    <script src="skriptIndex.js"></script>
 </body>
 </html>

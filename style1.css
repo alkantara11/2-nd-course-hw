@@ -115,12 +115,12 @@
   padding: 236px 260px 32px 32px;
   cursor: pointer;
 }
-
 .footer {
   background: #000915;
   display: flex;
   align-content: center;
-  justify-content: center;
+  justify-content: space-between;
+  height: 800px;
 }
 .footer_left {
   display: grid;
@@ -170,7 +170,105 @@
 .footer_img {
   margin-top: 232px;
 }
-
+.remember {
+    background: #000915;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 800px;
+  }
+  .remember_right {
+    row-gap: 32px;
+    margin-top: 282px;
+  }
+  .remember_h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+  }
+  .remember_h2 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 177.778% */
+    display: block;
+  }
+  .remember_button {
+    border-radius: 30px;
+    background: #9C0332;
+    width: 234.063px;
+    height: 48.603px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .remember_button:hover {
+    border-radius: 30px;
+    background: #EB443F;
+  }
+  .remember_img {
+    margin-top: 232px;
+  }
+  .riddle {
+    background: #000915;
+    background-image: url(./img/riddle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .riddle_h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+  }
+  .riddle_h2 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 177.778% */
+    display: block;
+  }
+  .riddle_button {
+    border-radius: 30px;
+    background: #9C0332;
+    width: 234.063px;
+    height: 48.603px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .riddle_button:hover {
+    border-radius: 30px;
+    background: #EB443F;
+  }
 @media (max-width: 767px) {
   * {
     margin: 0;
@@ -234,5 +332,68 @@
   }
   .footer_left {
     margin-top: 178px;
+  }
+  .remember {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .remember_h1 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: auto;
+    display: block;
+  }
+  .remember_h2 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
+    margin: auto;
+    display: block;
+  }
+  .remember_button {
+    margin: auto;
+    display: block;
+  }
+  .remember_img {
+    width: 344px;
+    margin-top: 64px;
+  }
+  .remember_left {
+    margin-top: 178px;
+  }
+  .riddle {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .riddle_h1 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: auto;
+    display: block;
+  }
+  .riddle_h2 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
+    margin: auto;
+    display: block;
+  }
+  .riddle_button {
+    margin: auto;
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
