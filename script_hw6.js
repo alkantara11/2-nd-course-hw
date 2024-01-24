@@ -1,8 +1,8 @@
 //1
 const numbers = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] == 10) break; 
-console.log(numbers[i]);
+    console.log(numbers[i]);
+    if (numbers[i] === 10) break;
 }
 //2
 const a = [1, 5, 4, 10, 0, 3];
@@ -14,19 +14,21 @@ b = b.split(',');
 b = b.join(' ');
 console.log(b);
 //4 
-let c = [
-    [1, 1, 1], 
-    [1, 1, 1], 
-    [1, 1, 1]
-];
+let table = []
+for (let i = 0; i < 3; i++) {
+  table[i] = [];
+  for (let j = 0; j < 3; j++) {
+    table[i][j] = 1;
+  };
+};
+console.log(table);
 //5
 let d = [1, 1, 1];
-d = d.push(2, 2, 2);
+d.push(2, 2, 2);
 console.log(d);
 //6 
 let e = [9, 8, 7, 'a', 6, 5];
-e.filter((el) => typeof el === 'number')
-console.log(e);
+console.log(e.filter((el) => typeof el === 'number'));
 //7 
 const f = [9, 8, 7, 6, 5];
 if (f.includes(Number(prompt('число?')))) {
@@ -36,9 +38,10 @@ if (f.includes(Number(prompt('число?')))) {
 }
 //8 
 let j = 'abcdef';
-j = j.split(',');
-j = j.reverse();
+j = j.split(' ');
 console.log(j);
+//j.reverse();
+//console.log(j);
 //9 
 h = [[1, 2, 3,],[4, 5, 6]];
 h = h.flat();
@@ -47,7 +50,8 @@ console.log(h);
 g = [1, 3, 5, 7];
 for (let i = 0; i < g.length; i++) {
     const element = g[i];
-    console.log(g[i] + g[i + 1]);  
+    console.log(g[i] + g[i + 1]);
+    if (g[i] == g.length-1) break;  
 }
 //11
 let s = [1,2,3,4,5];
@@ -55,17 +59,22 @@ let s = [1,2,3,4,5];
       console.log(elem ** 2);
 })
 //12
-u = ['мама мыла раму, а потом пришел слон, вот'];
-console.log(u.length);
+function arrSum(num) {
+    for (let i = 0; i < num.length; i++) {
+    sum = num[i]+num[i+1];
+    console.log(sum.length);
+} 
+} 
+arrSum(['слово', '', 'слог', 'длинное предложение', 'буква']);
 //13
-    function filterPositive(array) {
-    const negative = [-1, 0, 5, -10, 56];
+function filterPositive(array) {
+    const negative = []; 
     for (let i = 0; i < array.length; i++) {
-        if (array[i] < 0) {
-        negative.push(array[i])
+        if (array[i] < 0) { 
+            negative.push(array[i]) 
         }
     }
-    return negative
+    return negative 
 }
 console.log(filterPositive([-1, 0, 5, -10, 56]));
     
