@@ -38,10 +38,7 @@ if (f.includes(Number(prompt('число?')))) {
 }
 //8 
 let j = 'abcdef';
-j = j.split(' ');
-console.log(j);
-//j.reverse();
-//console.log(j);
+console.log(j.split('').reverse().join(''));
 //9 
 h = [[1, 2, 3,],[4, 5, 6]];
 h = h.flat();
