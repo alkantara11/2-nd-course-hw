@@ -46,13 +46,10 @@ for (let index = 0; index < i; index++) {
 }
 getRandom();
 //7
-//let k = prompt('1?');
-//let l = prompt('2?');
-//function getRandomX2(k, l) {
-//    return Math.round(Math.random * (maxValue - minValue)) + minValue
-//    console.log(getRandomX2);
-//}
-//getRandomX2();
+function getRandomInt(minValue, maxValue) {   
+    return Math.round(Math.random() * (maxValue - minValue)) + minValue
+    }                            
+    console.log(getRandomInt(1, 100));             
 //8 
 let myDate = new Date();
 console.log(myDate);

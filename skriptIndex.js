@@ -15,4 +15,20 @@ if (season > 8 && season < 12) {
     return `Такого месяца не существует!!!`;
 }
 alert (seasonPlay());
+};
+const rememberWord = () => {
+    let word = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    alert(word.sort(() => Math.random() - 0.5));
+    let answer1 = prompt('Чему равнялся первый элемент массива?');
+    let answer2 = prompt('Чему равнялся последний элемент массива?');
+    if (answer1 === word[0] && answer2 === word[6]) {
+        alert('Вы угадали!');
+    } else if (answer1 !== word[0] && answer2 === word[6]) {
+        alert('Вы были близки к победе!');
+    } else if (answer1 === word[0] && answer2 !== word[6]) {
+    alert('Вы были близки к победе!');
 }
+    else {
+        alert('Ответы не верны');
+    }
+};
