@@ -2,13 +2,24 @@
 let a = 'мама мыла раму';
 console.log(a.toUpperCase());
 //2
-let b = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-let serach = 'ко';
-b.forEach((b1) => {
-
-        if (b1.toLocaleLowerCase().includes(serach.toLocaleLowerCase()))
-        console.log(b1);
+function serach (array, string) {
+    const serachResult = [];
+    array.forEach((c1) => {
+        if  (c1.toLowerCase().includes(string.toLowerCase())) {
+            serachResult.push(c1)
+        }
 });
+    return serachResult
+}
+console.log(serach(['Кошка', 'Кит', 'Комар', 'Носорог'], "ко"));
+
+// let b = ['Кошка', 'Кит', 'Комар', 'Носорог'];
+// let serach = 'ко';
+// b.forEach((b1) => {
+
+//         if (b1.toLocaleLowerCase().includes(serach.toLocaleLowerCase()))
+//         console.log(b1);
+// });
 let c = ['яблоко', 'груша', 'гриб', 'огурец'];
 let serach1 = 'груша';
 c.forEach((c1) => {
@@ -35,16 +46,14 @@ console.log(Math.max(52, 53, 49, 77, 21, 32));
 let f = Math.random() * 10;
 console.log(Math.round(f));
 //6
-let n = prompt('введите число');
-function getRandom() {
+function getRandom(i) {
     const arr = [];
-    i = n / 2;
-    i = Math.floor(i);
-for (let index = 0; index < i; index++) {
-    console.log((Math.round(Math.random() * n)));
+for (let index = 0; index < Math.floor(i / 2); index++) {
+   arr.push((Math.floor(Math.random() * i)));
 }
+return arr 
 }
-getRandom();
+console.log(getRandom(7));
 //7
 function getRandomInt(minValue, maxValue) {   
     return Math.round(Math.random() * (maxValue - minValue)) + minValue
