@@ -38,20 +38,15 @@ if (f.includes(Number(prompt('число?')))) {
 }
 //8 
 let j = 'abcdef';
-j = j.split(' ');
-console.log(j);
-//j.reverse();
-//console.log(j);
+console.log(j.split('').reverse().join(''));
 //9 
-h = [[1, 2, 3,],[4, 5, 6]];
+let h = [[1, 2, 3,],[4, 5, 6]];
 h = h.flat();
 console.log(h);
 //10
-g = [1, 3, 5, 7];
-for (let i = 0; i < g.length; i++) {
-    const element = g[i];
-    console.log(g[i] + g[i + 1]);
-    if (g[i] == g.length-1) break;  
+let g = [1, 3, 5, 7];
+for (let i = 0; i < g.length - 1; i++) {
+    console.log(g[i] + g[i + 1]);  
 }
 //11
 let s = [1,2,3,4,5];
@@ -60,12 +55,10 @@ let s = [1,2,3,4,5];
 })
 //12
 function arrSum(num) {
-    for (let i = 0; i < num.length; i++) {
-    sum = num[i]+num[i+1];
-    console.log(sum.length);
-} 
+    return num.map(element => {return element.length});
 } 
 arrSum(['слово', '', 'слог', 'длинное предложение', 'буква']);
+
 //13
 function filterPositive(array) {
     const negative = []; 
